@@ -115,7 +115,7 @@ background-color: saddlebrown;
     padding:0px;
     text-align: center;
     align-content: center;
-    width: 106.95px;
+    width: 110.95px;
     
 }
 
@@ -134,7 +134,7 @@ background-color: saddlebrown;
     margin-bottom: 1px  ;
     display: block;
     text-align: center;
-width: 106.95px;
+width: 110.95px;
 }
 
 .dropdown:hover .dropdown-content {
@@ -143,4 +143,7 @@ width: 106.95px;
 
 .Menus:hover{
 background-color: lightblue;
+}
+.Menus{
+    width: 106.95;
 }
