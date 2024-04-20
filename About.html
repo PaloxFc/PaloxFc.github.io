@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+    <link rel="stylesheet" href="Css/Home.css">
+    <link rel="stylesheet" href="Css/Videos.css">
+    <link rel="stylesheet" href="Css/General.css">
+    <link rel="stylesheet" href="Css/About.css">
+</head>
+<body>
+    <div class="Header-container">
+        <div class="dropdown">
+            <button class="dropbtn">Go to Page</button>
+            <div class="dropdown-content">
+                <a class="Menus" href="index.html" onclick="selectPage('Homepage')">Home page</a>
+                <a class="Menus" href="Videos.html" onclick="selectPage('Videos Page')">Videos Page</a>
+                <a class="Menus" href="About.html" onclick="selectPage('About Page')">About Page</a>
+                <a class="Menus" href="Test.html" onclick="selectPage('About Page')">Donate Page</a>
+            </div>
+        </div>
+        
+      <div class="container">
+        <div>
+        <select name="Socialmedia" id="socialMediaSelect">
+         <option value="" id="SMP">Social media</option>
+         <option value="https://www.youtube.com/channel/UChA6Bde1cCeEhpXgIRlGp9w">Youtube</option>
+         <option value="https://twitter.com/ChadadYT">Twitter</option>
+         <option value="https://www.facebook.com/profile.php?id=100078348115362">Facebook</option>
+         <option value="https://www.threads.net/@adam_11_youtuber">Threads</option>
+         <option value="https://www.instagram.com/adam_11_youtuber/">Instagram</option>
+         </select>
+        </div>
+        <div>
+         <button onclick="redirectToSelected()">Submit</button>
+        </div>
+         </div>
+        </div>
+        
+           <script>
+            function redirectToSelected() {
+                var selectElement = document.getElementById("socialMediaSelect");
+                var selectedOption = selectElement.options[selectElement.selectedIndex];
+                if (selectedOption.value) {
+                    window.open(selectedOption.value, "_blank");
+                } else {
+                    alert("Please select a social media platform.");
+                }
+            }
+    </script>
+    </div>
+    <Div class="Essentiel">
+        <p class="Headers">About me</p>
+        <p id="A-H">"Welcome! Here in this page, you will be part of my family, by knowing more about me and about my personnal life.You will be more approached to me and one of my best friends with reading some of my really interesting points. Enjoy :)"
+        </p> </Div>
+        <div>
+            <div class="Info-containers">
+                <p class="About-headers">Adam Chadad: A Scholarly Luminary</p>
+               <p> In the realm of academia, Adam Chadad is a shining example of intellectual prowess and scholarly dedication. As a college student, he continues to excel in his academic pursuits while simultaneously exploring his diverse interests and passions.</p>
+            </div>
+            <div class="Info-containers">
+                <p class="About-headers">Academic Brilliance and Scholarly Excellence</p>
+              <p >Adam's academic journey in college is marked by his relentless pursuit of knowledge and his unwavering commitment to excellence. Despite the challenges of higher education, Adam's intellect and determination propel him to the top of his class, earning him accolades and recognition for his scholarly achievements. <br>
+                As a standout student, Adam demonstrates a remarkable aptitude for his chosen field of study, tackling complex subjects with ease and enthusiasm. His thirst for knowledge knows no bounds, driving him to delve deeper into his studies and explore new avenues of intellectual inquiry.</p>  
+            </div>
+            <div class="Info-containers">
+                <p class="About-headers">Passion for Technology and Innovation</p>
+                <p>Adam's passion for technology and innovation remains unabated as he navigates the challenges of college life. Drawing upon his love for programming and robotics, he continues to push the boundaries of technological advancement, seeking innovative solutions to real-world problems. <br>
+
+                    Through his involvement in college clubs and extracurricular activities, Adam channels his passion for technology into tangible projects and initiatives that make a positive impact on his campus and beyond. His visionary approach to problem-solving and his creative ingenuity set him apart as a leader in the field of technology and innovation.</p>
+
+            </div>
+            <div class="Info-containers">
+                <p class="About-headers">Multifaceted Scholar and Renaissance Mind</p>
+                <p>Beyond his academic pursuits, Adam's college experience is enriched by his diverse interests and talents. Fluent in multiple languages and well-versed in various disciplines, he embodies the spirit of a true Renaissance scholar, embracing the interconnectedness of knowledge and seeking to broaden his horizons at every opportunity. <br>
+
+                    Whether he's engaging in philosophical debates, delving into the intricacies of literature, or exploring the nuances of cultural anthropology, Adam's thirst for intellectual stimulation knows no bounds. His insatiable curiosity and voracious appetite for learning make him a valued member of the college community, inspiring others to embrace the pursuit of knowledge with passion and purpose.</p>
+
+            </div>
+            <div class="Info-containers">
+                <p class="About-headers">A Scholarly Legacy in the Making</p>
+                <p>As Adam continues to carve out his path in the world of academia, his journey is defined by a relentless pursuit of excellence and a steadfast commitment to his scholarly pursuits. With each passing day, he inches closer to realizing his dreams and leaving an indelible mark on the world as a scholar, innovator, and visionary leader. With Adam Chadad at the helm, the future of academia shines brighter than ever before.</p>
+
+            </div>
+
+
+        </div>
+</body>
+</html>     

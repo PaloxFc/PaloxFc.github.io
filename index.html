@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="Css/Home.css">
+    <link rel="stylesheet" href="Css/Videos.css">
+    <link rel="stylesheet" href="Css/General.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home page</title>
+</head>
+<body>
+  <div class="Header-container">
+    <div class="dropdown">
+        <button class="dropbtn">Go to Page</button>
+        <div class="dropdown-content">
+          <a class="Menus" href="index.html" onclick="selectPage('Homepage')">Home page</a>
+          <a class="Menus" href="Videos.html" onclick="selectPage('Videos Page')">Videos Page</a>
+          <a class="Menus" href="About.html" onclick="selectPage('About Page')">About Page</a>
+          <a class="Menus" href="Test.html" onclick="selectPage('About Page')">Donate Page</a>
+        </div>
+    </div>
+    
+  <div class="container">
+    <div>
+    <select name="Socialmedia" id="socialMediaSelect">
+     <option value="" id="SMP">Social media</option>
+     <option value="https://www.youtube.com/channel/UChA6Bde1cCeEhpXgIRlGp9w">Youtube</option>
+     <option value="https://twitter.com/ChadadYT">Twitter</option>
+     <option value="https://www.facebook.com/profile.php?id=100078348115362">Facebook</option>
+     <option value="https://www.threads.net/@adam_11_youtuber">Threads</option>
+     <option value="https://www.instagram.com/adam_11_youtuber/">Instagram</option>
+     </select>
+    </div>
+    <div>
+     <button onclick="redirectToSelected()">Submit</button>
+    </div>
+     </div>
+    </div>
+    
+       <script>
+        function redirectToSelected() {
+            var selectElement = document.getElementById("socialMediaSelect");
+            var selectedOption = selectElement.options[selectElement.selectedIndex];
+            if (selectedOption.value) {
+                window.open(selectedOption.value, "_blank");
+            } else {
+                alert("Please select a social media platform.");
+            }
+        }
+</script>
+</div>
+<Div class="Essentiel">
+ <p class="Headers">Introduction</p>
+ <p id="A-H">"Welcome! Step into the heart of our online hub – the official website of our YouTube channel. Here, you're not just a visitor; you're part of our digital community. Stay effortlessly connected, anytime, anywhere, to catch every update, every moment, and every bit of news about us. Your journey with us begins here."
+ </p> 
+</Div>
+<div id="A-SSUBPH">
+<div id="A-S">
+  <p style="font-weight: 700; font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;" class="Headers">General</p>
+  <p  style="font-weight: 500; font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;" class="Aboutus">I am Adam Chadad-the owner of the channel <strong>"تثقف مع شداد"</strong>- I am 12 years old from Morocco, especially in Casablanca. This channel was actually created in  9 janv. 2021, with an uknown goal, so i let this channel and created a new one in 16 april 2022 called <strong><a target="_blank" href="https://www.youtube.com/@Toasty-King">Palox Fc</a></strong>.Then i knew what to do with this channel in 17 mars 2024 - A perfect idea - "Quiz videos"</p>
+</div>
+<Div class="SUBPH">
+  <img id="Channel-photo" src="Images/Allah_in_Islamic_calligraphy.png" alt="Channel-photo">
+  <a class="Subscribe" target="_blank" href="https://www.youtube.com/channel/UChA6Bde1cCeEhpXgIRlGp9w"><Button class="Button">Subscribe</Button></a>
+</Div>
+</div>
+</body>
+   
+</html>

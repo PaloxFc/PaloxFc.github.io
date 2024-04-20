@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donate</title>
+    <link rel="stylesheet" href="Css/General.css">
+    <link rel="stylesheet" href="Css/About.css">
+</head>
+<body>
+    <div class="Header-container">
+        <div class="dropdown">
+            <button class="dropbtn">Go to Page</button>
+            <div class="dropdown-content">
+                <a class="Menus" href="index.html" onclick="selectPage('Homepage')">Home page</a>
+                <a class="Menus" href="Videos.html" onclick="selectPage('Videos Page')">Videos Page</a>
+                <a class="Menus" href="About.html" onclick="selectPage('About Page')">About Page</a>
+                <a class="Menus" href="Test.html" onclick="selectPage('About Page')">Donate Page</a>
+            </div>
+        </div>
+        
+      <div class="container">
+        <div>
+        <select name="Socialmedia" id="socialMediaSelect">
+         <option value="" id="SMP">Social media</option>
+         <option value="https://www.youtube.com/channel/UChA6Bde1cCeEhpXgIRlGp9w">Youtube</option>
+         <option value="https://twitter.com/ChadadYT">Twitter</option>
+         <option value="https://www.facebook.com/profile.php?id=100078348115362">Facebook</option>
+         <option value="https://www.threads.net/@adam_11_youtuber">Threads</option>
+         <option value="https://www.instagram.com/adam_11_youtuber/">Instagram</option>
+         </select>
+        </div>
+        <div>
+         <button onclick="redirectToSelected()">Submit</button>
+        </div>
+         </div>
+        </div>
+        
+           <script>
+            function redirectToSelected() {
+                var selectElement = document.getElementById("socialMediaSelect");
+                var selectedOption = selectElement.options[selectElement.selectedIndex];
+                if (selectedOption.value) {
+                    window.open(selectedOption.value, "_blank");
+                } else {
+                    alert("Please select a social media platform.");
+                }
+            }
+    </script>
+    </div>
+    <div class="Essentiel">
+    <h1>Donate with our community</h1>
+    <p>Thank you for choosing to donate with us and i appreciate it too much.</p>
+</div>
+<Div style="align-items: center;margin-top: 10px;" class="Essentiel">
+    <h2 >Donate with paypal</h2>
+
+    <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+        <input type="hidden" name="cmd" value="_xclick">
+        <input type="hidden" name="business" value="adamchadad666@gmail.com">
+        <input type="hidden" name="currency_code" value="USD">
+       
+        <div>
+            <label for="amount">Amount (USD):</label>
+            <input type="text" id="amount" name="amount" placeholder="Enter amount">
+        </div>
+        <button style="margin-left: 45%;margin-top: 10px;" type="submit">Pay Now</button>
+    </Div>
+    </form>
+</body>
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Videos</title>
+    <link rel="stylesheet" href="Css/Home.css">
+    <link rel="stylesheet" href="Css/General.css">
+    <link rel="stylesheet" href="Css/Videos.css">
+</head>
+<body>
+    <div class="Header-container">
+        <div class="dropdown">
+            <button class="dropbtn">Go to Page</button>
+            <div class="dropdown-content">
+                <a class="Menus" href="index.html" onclick="selectPage('Homepage')">Home page</a>
+                <a class="Menus" href="Videos.html" onclick="selectPage('Videos Page')">Videos Page</a>
+                <a class="Menus" href="About.html" onclick="selectPage('About Page')">About Page</a>
+                <a class="Menus" href="Test.html" onclick="selectPage('About Page')">Donate Page</a>
+            </div>
+        </div>
+        <div id="selectedPage"></div>
+          <div class="container">
+            <select name="Socialmedia" id="socialMediaSelect">
+             <option value="" id="SMP">Social media</option>
+             <option value="https://www.youtube.com/channel/UChA6Bde1cCeEhpXgIRlGp9w">Youtube</option>
+             <option value="https://twitter.com/ChadadYT">Twitter</option>
+             <option value="https://www.facebook.com/profile.php?id=100078348115362">Facebook</option>
+             <option value="https://www.threads.net/@adam_11_youtuber">Threads</option>
+             <option value="https://www.instagram.com/adam_11_youtuber/">Instagram</option>
+             </select>
+             <button onclick="redirectToSelected()">Submit</button>
+             </div>
+            </div>
+            <script>
+            function redirectToSelected() {
+            var selectElement = document.getElementById("socialMediaSelect");
+            var selectedOption = selectElement.options[selectElement.selectedIndex];
+            if (selectedOption.value) {
+                window.open(selectedOption.value, "_blank");
+            } else {
+                alert("Please select a social media platform.");
+            }
+        }
+        </script>
+        
+        </div>
+        </div>
+    </div>
+    <div class="Essentiel">
+        <p class="Headers">Videos</p>
+        <p>Welcome to the videos part, here you'll find any new video posted online on our channel. Don't forget to like them and to let a beautiful comment like you. I recommend you to watch them to the end so you don't miss any information. Enjoy :)</p>
+    </div> 
+    <div id="Videos">
+     <div ><a href="https://youtu.be/CMb7kC34uBg?si=4jy1w52cxwxr01Eg"><img class="Vid-Img" src="Images\1.png" alt="1st video"></a></div>
+     <div ><a href="https://youtu.be/ja5J3FIch48?si=wbKmkhRigPgIZ8q8"><img class="Vid-Img" src="Images\2.png" alt="2nd video"></a></div>
+     <div ><a href="https://youtu.be/GDrkm6DYtVU?si=Zc_5B_EsQ9ixEFMf"><img class="Vid-Img" src="Images\3.png" alt="3rd video"></a></div>
+     <div ><a href="https://youtu.be/s2REPKHQh4I?si=zi-MG2m6spWAaveu"><img class="Vid-Img" src="Images\4.png" alt="4th video"></a></div>
+    </div>
+</body>
+</html>
