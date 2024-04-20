@@ -36,6 +36,8 @@ background-color: saddlebrown;
    border-style: solid;
    margin-top: 1px;
    font-weight: 500;
+   
+
 }
 .Headers{
     font-weight: bolder;
@@ -61,7 +63,7 @@ background-color: saddlebrown;
   }
   
   /* Style for submit button */
-  Button {
+  Button,.submit {
     display: block;
     background-color: #4CAF50;
     color: white;
@@ -70,11 +72,12 @@ background-color: saddlebrown;
     border-radius: 5px;
     cursor: pointer;
     font-size: 16px;
-    width: fit-content;
+    
     transition: 0.4s;
+    
   }
   
- Button:hover {
+ Button:hover,.submit:hover {
     background-color: #1c6320;
     transition: 0.4s;
 }
@@ -101,18 +104,20 @@ background-color: saddlebrown;
   }
   .dropdown {
     position: relative;
-    display: inline-block;
-    width:fit-content ;
+    display: inline-block; ;
 }
 
 .dropdown-content {
     display: none;
     position: absolute;
-    background-color: #f9f9f9;
+    background-color:wheat;
     width: fit-content;
     z-index: 1;
-    padding:2px
-
+    padding:0px;
+    text-align: center;
+    align-content: center;
+    width: 110px;
+    
 }
 
 .dropdown-content a {
@@ -129,6 +134,8 @@ background-color: saddlebrown;
     margin-top: 1px;
     margin-bottom: 1px  ;
     display: block;
+    text-align: center;
+    width: 1fr;
 
 }
 
