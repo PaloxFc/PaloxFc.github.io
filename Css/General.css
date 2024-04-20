@@ -134,8 +134,7 @@ background-color: saddlebrown;
     margin-bottom: 1px  ;
     display: block;
     text-align: center;
-    width: 111px;
-
+width: 111px;
 }
 
 .dropdown:hover .dropdown-content {
