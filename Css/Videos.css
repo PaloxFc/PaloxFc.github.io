@@ -1,0 +1,38 @@
+.Vid-Img {
+    width: 100%; /* Change width to 100% to make images responsive */
+    height: auto; /* Let the height adjust automatically to maintain aspect ratio */
+    border-radius: 13px;
+    display: inline;
+    visibility: visible;
+}
+
+.Vid-Img:hover {
+    opacity: 0.8;
+    visibility: visible;
+}
+
+.Vid-Img:active {
+    opacity: 0.5;
+    visibility: visible;
+}
+
+#Videos {
+    display: grid;
+    row-gap: 3px;
+    margin-top: 5px;
+    width: 100%; /* Make the grid container take up the full width */
+    grid-template-columns: 1fr; /* Initially, only one column */
+    column-gap: 5px;
+}
+
+@media screen and (min-width: 768px) {
+    #Videos {
+        grid-template-columns: repeat(2, 1fr); /* 2 columns for screens larger than 768px */
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    #Videos {
+        grid-template-columns: repeat(4, 1fr); /* 4 columns for screens larger than 1024px */
+    }
+}

@@ -1,0 +1,68 @@
+#A-SSUBPH {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 20px;
+    border-style: solid;
+    width: 90%;
+    max-width: 620px; /* Set maximum width */
+    padding: 10px;
+  }
+  
+  #A-S {
+    width: 100%; /* Take full width */
+  }
+  
+  .SUBPH {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+  }
+  
+  #Channel-photo {
+    height: 300px;
+  }
+  
+  .Button {
+    background-color: rgb(200, 0, 0);
+    color: white;
+    border: none;
+    border-radius: 2px;
+    cursor: pointer;
+    margin-top: 10px; /* Adjust as needed */
+    font-size: 20px;
+    padding: 10px 16px;
+    transition: 0.15s;
+  }
+  
+  .Button:hover {
+    opacity: 0.8;
+    background-color: rgb(171, 5, 5);
+    box-shadow: 2px 2px black;
+    transition: 0.15s ;
+    
+  }
+  
+  .Button:active {
+    opacity: 0.5;
+  }
+  
+  @media only screen and (max-width: 618px) {
+    #A-SSUBPH {
+      flex-direction: column-reverse; /* Reverse the order of elements */
+      align-items: center;
+    }
+  
+    #A-S,
+    .SUBPH {
+      width: 100%; /* Take full width */
+      text-align: center; /* Center align text */
+    }
+  
+    .Button {
+      margin-top: 20px; /* Adjust as needed */
+    }
+  }
+  

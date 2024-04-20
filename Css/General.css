@@ -1,0 +1,141 @@
+body{
+    background-color: wheat;
+    margin-top: 2px;
+
+   
+}
+body,html{
+    position: relative;
+    width: 100%;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+}
+.dropdown-content{
+background-color: saddlebrown;
+    color: white;
+    padding: 10px 15px; /* Adjust padding */
+    text-decoration-line: none;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    font-family: sans-serif;
+    margin: 0;
+}
+.Hop{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 3px;
+    width: fit-content;
+    margin: 0;
+}
+.Essentiel{
+    font-size: large;
+   font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+   text-align: center; 
+   border-style: solid;
+   margin-top: 1px;
+   font-weight: 500;
+}
+.Headers{
+    font-weight: bolder;
+    text-decoration: underline;
+    font-size: 18px;
+    
+}
+
+.Header-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+    align-items: center;
+    height: 79.16px;
+}
+#socialMediaSelect {
+    font-size: 16px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    width: fit-content; /* Adjust width */
+    width: fit-content;
+
+  }
+  
+  /* Style for submit button */
+  Button {
+    display: block;
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 15px; /* Adjust padding */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    width: fit-content;
+    transition: 0.4s;
+  }
+  
+ Button:hover {
+    background-color: #1c6320;
+    transition: 0.4s;
+}
+.container {
+    position: absolute;
+    top: 0;
+    right: 10px; /* Adjust as needed */
+    z-index: 999; /* Ensure it's above other elements */
+    height: 30px;
+    margin-bottom: 10px;
+    margin-top: 2px;
+    display: inline-block;
+    grid-template-columns: 1fr 1fr;
+    width: fit-content;
+    align-items: center;
+    column-gap: 3px;
+    margin-right: 3px;
+  
+    
+
+  }
+  .SMP{
+    padding-right: 1px;
+  }
+  .dropdown {
+    position: relative;
+    display: inline-block;
+    width:fit-content ;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    width: fit-content;
+    z-index: 1;
+    padding:2px
+
+}
+
+.dropdown-content a {
+    background-color:darkblue;
+    color: white;
+    padding: 10px 2px; /* Adjust padding */
+    text-decoration-line: none;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    font-family: sans-serif;
+    margin: 0;
+    margin-top: 1px;
+    margin-bottom: 1px  ;
+    display: block;
+
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.Menus:hover{
+background-color: lightblue;
+}
