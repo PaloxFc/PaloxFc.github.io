@@ -1,14 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="icon" type="image/x-icon" href="Images/Allah_in_Islamic_calligraphy.png">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact</title>
-    <link rel="icon" type="image/x-icon" href="Images/Allah_in_Islamic_calligraphy.png">
-    <link rel="stylesheet" href="Css/Home.css">
-    <link rel="stylesheet" href="Css/Videos.css">
+    <title>Donate</title>
     <link rel="stylesheet" href="Css/General.css">
     <link rel="stylesheet" href="Css/About.css">
+    <link rel="icon" type="image/x-icon" href="Images/Allah_in_Islamic_calligraphy.png">
 </head>
 <body>
     <div class="Header-container">
@@ -18,8 +17,8 @@
                 <a class="Menus" href="index.html" onclick="selectPage('Homepage')">Home</a>
                 <a class="Menus" href="Videos.html" onclick="selectPage('Videos Page')">Videos</a>
                 <a class="Menus" href="About.html" onclick="selectPage('About Page')">About</a>
-                <a class="Menus" href="Donate.html" onclick="selectPage('About Page')">Donate</a>
-                <a class="Menus" href="Contact.html" onclick="selectPage('About Page')">Contact</a>
+                <a class="Menus" href="Donate.html" onclick="selectPage('Donate Page')">Donate</a>
+                <a class="Menus" href="Contact.html" onclick="selectPage('Contact Page')">Contact</a>
                 <a class="Menus" href="Subscribers.html" onclick="selectPage('Subscribers-gallery Page')">Subscribers gallery </a>
             </div>
         </div>
@@ -53,40 +52,18 @@
             }
     </script>
     </div>
-    <div class="Essentiel" style="margin-bottom: 10px;"> 
-        <h3 style="text-decoration: underline; margin: 4px;">Contact Us</h3>
-        <p>Send us any message you want. Spams are not allowed❗⛔</p>
-    </div>
-    <div class="Essentiel"  style=
-         "height: 340px; 
-         width: fit-content; 
-         transform: translateX(-50%);
-         position: absolute;
-         left: 49%;">
-    <h3 class="Headers" style="text-decoration: underline;  margin: 4px;margin-bottom: 10px;">Fill form</h3>
-    <form action="https://formspree.io/f/xayrajay" method="POST">
-     <label for="name">Your Name:</label><br>
-     <input type="text" id="name" name="name" required><br>
-     <label for="email">Your Email:</label><br>
-     <input type="email" id="email" name="email" required><br>
-     <label for="message">Message:</label><br>
-     <textarea id="message" name="message" rows="4" required></textarea><br>
-     <input  type="submit" class="submit" style=
-           "left: 49%;
-           background-image:url('Images/gmail-icon-logo-9ADB17D3F3-seeklogo.com.png') ;
-           background-size: cover;
-           background-color: wheat;
-           border-radius: 0%;
-           width: max-content;
-           transform: translateX(-50%);position: absolute;
-           width: 100px;
-          height: 100px;
-           "
-           onmouseover="this.style.opacity='0.8'" 
-           onmouseout="this.style.opacity='1'" onclick="this.style.opacity='0.5'" 
-           
-         value="">
-        </form>
-        </div>
-</body>
-</html>
+    <div class="Essentiel">
+    <h3 style="text-decoration:none";>Subscribers gallery</h3>
+    <p>Here, you can send me photos wich i will display on my website specifically in this page with associated by a message wroten by you. <br> I love you, my dear subscribers ❤</p>
+</div> 
+<div class="Essentiel" style="height: 293px;margin-top: 5px;"">
+    <h3 style="text-decoration: underline; margin: 4px;margin-bottom: 10px;">Upload</h3>
+<form action="https://usebasin.com/f/23543d15416d" method="POST" enctype="multipart/form-data">
+    <label for="name">Your Name:</label><br>
+    <input type="text" id="name" name="name" required><br>
+    <label for="image">Image</label><br>
+    <input type="file" name="photo" accept="image/*"><br>
+    <label for="message">Message:</label><br>
+    <textarea id="message" name="message" rows="4" required></textarea><br>
+    <button style="transform: translateX(-50%);position: absolute;left: 49%;" type="submit">Submit</button>
+    
