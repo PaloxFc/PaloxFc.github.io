@@ -1,3 +1,10 @@
+body{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow-x: hidden;
+  padding: 5px 0px;
+}
 #A-SSUBPH {
     display: flex;
     justify-content: center;
@@ -25,7 +32,7 @@
     height: 300px;
   }
   
-  .Button {
+  .Sub {
     background-color: rgb(200, 0, 0);
     color: white;
     border: none;
@@ -37,7 +44,7 @@
     transition: 0.15s;
   }
   
-  .Button:hover {
+  .Sub:hover {
     opacity: 0.8;
     background-color: rgb(171, 5, 5);
     box-shadow: 2px 2px black;
@@ -45,13 +52,13 @@
     
   }
   
-  .Button:active {
+  .Sub:active {
     opacity: 0.5;
   }
   
   @media only screen and (max-width: 618px) {
     #A-SSUBPH {
-      flex-direction: column-reverse; /* Reverse the order of elements */
+      flex-direction: column; /* Reverse the order of elements */
       align-items: center;
     }
   
