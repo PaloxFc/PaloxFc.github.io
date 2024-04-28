@@ -42,12 +42,13 @@ body{
     font-size: 20px;
     padding: 10px 16px;
     transition: 0.15s;
+        box-shadow: 2px 2px black;
+    text-decoration:none;
   }
   
   .Sub:hover {
     opacity: 0.8;
     background-color: rgb(171, 5, 5);
-    box-shadow: 2px 2px black;
     transition: 0.15s ;
     
   }
