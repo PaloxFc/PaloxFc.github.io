@@ -15,10 +15,12 @@
     border-radius: 5px;
     border: 1px solid #ccc;
     width: fit-content;
+    z-index:9999;
   }
   .dropdown {
     display:flex;
     flex-direction: column;
+      z-index:9999;
     
   }
 
@@ -43,16 +45,19 @@
 
 .dropdown:hover .dropdown-content {
     display: block;
+    z-index:9999;
     
 }
 
 .Menus:hover{
 background-color: lightblue;
+    z-index:9999;
 
 
 }
 .dropdown-content{
     display: none;
+    z-index:9999;
   
 
 }
