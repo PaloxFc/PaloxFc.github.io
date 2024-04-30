@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ</title>
+    <link rel="icon" type="image/x-icon" href="Images/Allah_in_Islamic_calligraphy.png">
+    <link rel="stylesheet" href="Css/General.css">
+    <link rel="stylesheet" href="Css/Header.css">
+</head>
+<body>
+    <div class="Header-container">
+        <div class="dropdown">
+            <button class="dropbtn">Go to Page</button>
+            <div class="dropdown-content">
+              <a class="Menus" href="index.html" onclick="selectPage('Homepage')">Home</a>
+              <a class="Menus" href="Videos.html" onclick="selectPage('Videos Page')">Videos</a>
+              <a class="Menus" href="About.html" onclick="selectPage('About Page')">About</a>
+              <a class="Menus" href="Donate.html" onclick="selectPage('About Page')">Donate</a>
+              <a class="Menus" href="Contact.html" onclick="selectPage('About Page')">Contact</a>
+              <a class="Menus" href="Subscribers.html" onclick="selectPage('Subscribers-gallery Page')">Gallery</a>
+            </div>
+        </div>
+        
+      <div class="container">
+        <div>
+        <select name="Socialmedia" id="socialMediaSelect">
+         <option value="" id="SMP">Social media</option>
+         <option value="https://www.youtube.com/channel/UChA6Bde1cCeEhpXgIRlGp9w">Youtube</option>
+         <option value="https://twitter.com/ChadadYT">Twitter</option>
+         <option value="https://www.facebook.com/profile.php?id=100078348115362">Facebook</option>
+         <option value="https://www.threads.net/@adam_11_youtuber">Threads</option>
+         <option value="https://www.instagram.com/adam_11_youtuber/">Instagram</option>
+         </select>
+        </div>
+        <div>
+         <button onclick="redirectToSelected()">Navigate</button>
+        </div>
+         </div>
+        </div>
+        
+           <script>
+            function redirectToSelected() {
+                var selectElement = document.getElementById("socialMediaSelect");
+                var selectedOption = selectElement.options[selectElement.selectedIndex];
+                if (selectedOption.value) {
+                    window.open(selectedOption.value, "_blank");
+                } else {
+                    alert("Please select a social media platform.");
+                }
+            }
+            
+    
+    </script>
+    </div>
+    <div class="Essentiel">
+        <p class="Headers">F.A.Q</p>
+      <p>We're thrilled to have you here! Our FAQ page is designed to provide you with quick answers to some of the most common questions we receive from our viewers. Whether you're new to our channel or a long-time subscriber, we hope you find the information you're looking. <br><br> If you don't see your question answered below, don't hesitate to reach out to us directly by leaving us a message on the contact page 😉. We're always eager to hear from our audience and assist you in any way we can ❤ <br><br> Thank you for your continued support and for being a part of our community! </p>  
+    </div>
+    <div class="Essentiel" style="margin-top: 10px;" >
+        <p class="Headers2">1)What is "تثقف مع شداد" about?</p>
+        <p>⚫ <strong>"تثقف مع شداد"</strong> is dedicated to mostly quiz videos and specifically islamic ones. We create a lot of intresting videos that you will genuinely like.To gain God's satisfaction and to reach a good amount of subscribers</p>      
+    </div>
+    <div class="Essentiel"style="margin-top: 10px;">
+        <p class="Headers2">2)How often do you upload new videos?</p>
+        <p>⚫ We aim to upload new videos every weekend, but it may vary depending on our schedule and the complexity of the content. </p>
+    </div>
+    <div class="Essentiel"style="margin-top: 10px;">
+        <p class="Headers2">3)Can I suggest video ideas or topics for your channel?</p>
+        <p>⚫ Absolutely! We love hearing from our viewers. Feel free to leave your suggestions in the comments section of any of our videos, or you can reach out to us through the contact page.</p>
+    </div>
+    <div class="Essentiel"style="margin-top: 10px;">
+        <p class="Headers2">4)Do you collaborate with other creators?</p>
+        <p>⚫ I never thinked about it on this channel, but i can do it on my other channel <a href="https://www.youtube.com/channel/UCxmkH-WTN5HJ_tF4fN-Sbzg">Palox fc</a> but i can change this in the future.</p>
+    </div>
+    <div class="Essentiel"style="margin-top: 10px;">
+        <p class="Headers2">5)How can I support you?</p>
+        <p>⚫ You can support me by several ways: <br>-Subscribe to our channel and turn on notifications to stay updated with our latest videos. <br>               -Like, comment, and share our videos with your friends and on social media platforms. <br>-Donate some money by paypal. <br> -Subscribe to all my social media accounts </p>
+    </div>
+    <div class="Essentiel"style="margin-top: 10px;">
+        <p class="Headers2">6)Can I use your content in my own videos?</p>
+        <p>⚫ We encourage sharing and spreading knowledge, but please make sure to credit us and buy the copyright from us appropriately if you use our content. For commercial use or if you have specific questions about using our content, please reach out to us through emailing me on chad.adam.imrane@gmail.com.</p>
+    </div>
+    <div class="Essentiel"style="margin-top: 10px;">
+        <p class="Headers2">7)Can I support your channel without spending money?</p>
+        <p>⚫ Absolutely! You can support our channel by watching our videos, engaging with our content (likes, comments, shares), and spreading the word to your friends and family.</p>
+    </div>
+    <div class="Essentiel"style="margin-top: 10px;">
+        <p class="Headers2">8)Who are you? Where are you from? Where do you live? How old are you? <br> From wich religion? Brothers/Sisters counter and their ages?</p>
+        <p>⚫ I am Adam Chadad, i am 12 years old from Morocco, i currently live in Tit Mellil. I have 2 lovely parents who gave birth to 3 kids. Me-Imrane(8 years old)-Haroun(1,5 year old)   </p>
+    </div>
+    <div class="Essentiel"style="margin-top: 10px;">
+        <p class="Headers2">Which are your favourite things?</p>I
+        <p>⚫ Football/Programing/Video games/
+         </p>
+    </div>
+    
+</body>
+</html>
