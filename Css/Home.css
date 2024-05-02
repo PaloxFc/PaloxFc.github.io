@@ -61,7 +61,7 @@ body{
   
   @media only screen and (max-width: 618px) {
     #A-SSUBPH {
-      flex-direction: column; /* Reverse the order of elements */
+      flex-direction: column;
       align-items: center;
     }
   

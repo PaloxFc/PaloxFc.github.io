@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <script src="Script.js"></script>
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5079123881160561"
      crossorigin="anonymous"></script>
     <meta charset="UTF-8">
@@ -9,7 +10,6 @@
     <link rel="icon" type="image/x-icon" href="Images/Allah_in_Islamic_calligraphy.png">
     <link rel="stylesheet" href="Css/Header.css">
     <link rel="stylesheet" href="Css/General.css">
-   
 </head>
 <body>
     <div class="Header-container">
@@ -18,7 +18,7 @@
             <div class="dropdown-content">
                 <a class="Menus" href="index.html" onclick="selectPage('Homepage')">Home</a>
                 <a class="Menus" href="Videos.html" onclick="selectPage('Videos Page')">Videos</a>
-                <a class="Menus" href="About.html" onclick="selectPage('About Page')">About</a>
+                <a class="Menus" href="About.html" onclick="selectPage('About Page')">Me</a>
                 <a class="Menus" href="Donate.html" onclick="selectPage('About Page')">Donate</a>
                 <a class="Menus" href="Contact.html" onclick="selectPage('About Page')">Contact</a>
                 <a class="Menus" href="Subscribers.html" onclick="selectPage('Subscribers-gallery Page')">Gallery </a>
@@ -26,47 +26,31 @@
             </div>
         </div>
         
-      <div class="container">
-        <div>
-        <select name="Socialmedia" id="socialMediaSelect">
-         <option value="" id="SMP">Social media</option>
-         <option value="https://www.youtube.com/channel/UChA6Bde1cCeEhpXgIRlGp9w">Youtube</option>
-         <option value="https://twitter.com/ChadadYT">Twitter</option>
-         <option value="https://www.facebook.com/profile.php?id=100078348115362">Facebook</option>
-         <option value="https://www.threads.net/@adam_11_youtuber">Threads</option>
-         <option value="https://www.instagram.com/adam_11_youtuber/">Instagram</option>
-         </select>
+        <div class="container">
+            <select name="Socialmedia" id="socialMediaSelect">
+             <option value="" id="SMP">Social media</option>
+             <option value="https://www.youtube.com/channel/UChA6Bde1cCeEhpXgIRlGp9w">Youtube</option>
+             <option value="https://twitter.com/ChadadYT">Twitter</option>
+             <option value="https://www.facebook.com/profile.php?id=100078348115362">Facebook</option>
+             <option value="https://www.threads.net/@adam_11_youtuber">Threads</option>
+             <option value="https://www.instagram.com/adam_11_youtuber/">Instagram</option>
+             </select>
+             <button onclick="redirectToSelected()">Navigate</button>
+             </div>
+            </div>
         </div>
-        <div>
-         <button onclick="redirectToSelected()">Navigate</button>
-        </div>
-         </div>
-        </div>
-        
-           <script>
-            function redirectToSelected() {
-                var selectElement = document.getElementById("socialMediaSelect");
-                var selectedOption = selectElement.options[selectElement.selectedIndex];
-                if (selectedOption.value) {
-                    window.open(selectedOption.value, "_blank");
-                } else {
-                    alert("Please select a social media platform.");
-                }
-            }
-    </script>
-    </div>
     <div class="Essentiel" style="margin-bottom: 10px;"> 
         <p class="Headers" style=" text-decoration:underline; margin:4px;">Contact Us</p>
         <p>Send us any message you want. Spams are not allowed❗⛔</p>
     </div>
     <div class="Essentiel2"  style=
-         "height: 400px; 
-         width: fit-content; 
-         transform: translateX(-50%);
-         position: absolute;
-         left: 49%;
-        z-index:-1;
-         ">
+            "height: 400px; 
+            width: fit-content; 
+            transform: translateX(-50%);
+            position: absolute;
+            left: 49%;
+            z-index:-1;
+            ">
          
      <p  style="margin: 4px; margin-bottom: 10px;">Fill form</p>
      <form action="https://formspree.io/f/xayrajay" method="POST" id="Contact">
@@ -78,35 +62,23 @@
      <textarea id="message" name="message" rows="4" required></textarea><br>
      <input  type="submit" class="submit" id="submit"
      style="
-        left: 49%;
-        background-image:url('Images/gmail-icon-logo-9ADB17D3F3-seeklogo.com.png') ;
-        background-size: cover;
-        background-color: wheat;
-        border: none;
-        width: max-content;
-        transform: translateX(-50%);position: absolute;
-        width: 100px;
-        height: 100px;
-        cursor: pointer;"       
+            left: 49%;
+            background-image:url('Images/gmail-icon-logo-9ADB17D3F3-seeklogo.com.png') ;
+            background-size: cover;
+            background-color: wheat;
+            border: none;
+            width: max-content;
+            transform: translateX(-50%);position: absolute;
+            width: 100px;
+            height: 100px;
+            cursor: pointer;"       
         onmouseover="this.style.opacity='0.8'" 
         onmouseout="this.style.opacity='1'" onclick="this.style.opacity='0.5'" 
         value="">
         </form>
         </div>       
 <script>
-    // Function to clear form fields
-    function clearFormFields() {
-      document.getElementById('Contact').reset();
-    }
-
-    // Reload the page when it loses focus or when the user navigates away
-    window.addEventListener('blur', function() {
-      location.reload();
-    });
-
-    // Reload the page when navigating to another page within the same website
-    window.addEventListener('beforeunload', function() {
-      clearFormFields();
-    });
+    
+    </script>
 </body>
 </html>

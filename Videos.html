@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <script src="Script.js"></script>
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5079123881160561"
      crossorigin="anonymous"></script>
     <link rel="icon" type="image/x-icon" href="Images/Allah_in_Islamic_calligraphy.png">
@@ -18,15 +19,14 @@
             <div class="dropdown-content">
                 <a class="Menus" href="index.html" onclick="selectPage('Homepage')">Home</a>
                 <a class="Menus" href="Videos.html" onclick="selectPage('Videos Page')">Videos</a>
-                <a class="Menus" href="About.html" onclick="selectPage('About Page')">About</a>
+                <a class="Menus" href="About.html" onclick="selectPage('About Page')">Me</a>
                 <a class="Menus" href="Donate.html" onclick="selectPage('About Page')">Donate</a>
                 <a class="Menus" href="Contact.html" onclick="selectPage('About Page')">Contact</a>
                 <a class="Menus" href="Subscribers.html" onclick="selectPage('Subscribers-gallery Page')">Gallery</a>
                 <a class="Menus" href="FAQ.html" onclick="selectPage('FAQ')">F.A.Q</a>
             </div>
         </div>
-        <div id="selectedPage"></div>
-          <div class="container">
+        <div class="container">
             <select name="Socialmedia" id="socialMediaSelect">
              <option value="" id="SMP">Social media</option>
              <option value="https://www.youtube.com/channel/UChA6Bde1cCeEhpXgIRlGp9w">Youtube</option>
@@ -38,21 +38,7 @@
              <button onclick="redirectToSelected()">Navigate</button>
              </div>
             </div>
-            <script>
-            function redirectToSelected() {
-            var selectElement = document.getElementById("socialMediaSelect");
-            var selectedOption = selectElement.options[selectElement.selectedIndex];
-            if (selectedOption.value) {
-                window.open(selectedOption.value, "_blank");
-            } else {
-                alert("Please select a social media platform.");
-            }
-        }
-        </script>
-        
         </div>
-        </div>
-    </div>
     <div class="Essentiel">
         <p class="Headers">Videos</p>
         <p>Welcome to the videos part, here you'll find any new video posted online on our channel. Don't forget to like them and to let a beautiful comment like you. I recommend you to watch them to the end so you don't miss any information. Enjoy :)</p>
